@@ -1,4 +1,4 @@
-h1. Simple jQuery plugin for Geolocation based on addresses
+h2. Simple jQuery plugin for Geolocation based on addresses
 
 Usage:
 
