@@ -16,7 +16,14 @@ $.fn.geolocate = function (address, options) {
     var googleMapsElement = document.getElementById(mapContainer.attr('id'));
     var map = new google.maps.Map(googleMapsElement, options.googleMaps);    
     
-    geocoder.geocode({'address': address}, applyLocationToMap);
+		if ($.isArray(address)){
+			for (i=0;i<address.length;i++){
+				geocoder.geocode({'address': address[i]}, applyLocationToMap);
+			}
+		}
+		else{
+    	geocoder.geocode({'address': address}, applyLocationToMap);			
+		}
     
     function applyLocationToMap(results, status) {
       var location = results[0].geometry.location;

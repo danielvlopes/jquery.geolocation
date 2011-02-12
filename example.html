@@ -28,14 +28,14 @@
     <script type="text/javascript" charset="utf-8">
     
     $(document).ready(function() {
-      var firstAddress = $("#addressList li:first a").html();
-      $("#mapCanvas").geolocate(firstAddress);      
-      $("#addressList li a").click(geolocateAddress);
+      locations = ["Rua Domiciano Leite Ribeiro, 210, São Paulo, SP, Brasil", "Leonardo da Vinci, 200, SP, São Paulo"]
+      $("#mapCanvas").geolocate(locations);
     });
     
     function geolocateAddress(event) {
       var address = $(this).html();
       $("#mapCanvas").geolocate(address);
+      $("#mapCanvas").geolocate("Praça do Papa, Belo Horizonte - Minas Gerais, Brasil");
     }   
     </script>    
   </body>
