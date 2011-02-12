@@ -1,0 +1,36 @@
+body { 
+  background: #eee; 
+  font-family: monaco, 'courier new', helvetica, sans-serif; 
+}
+
+#container { 
+  width: 900px; 
+  margin: 50px auto; 
+  background: #fff; 
+  padding: 25px; 
+  border: 1px solid #ccc; 
+}
+
+h1 { 
+  color: #eee; 
+  font-size: 12px; 
+  margin-bottom: 10px; 
+  font-weight: normal; 
+  background: #111; 
+  padding: 7px; 
+}
+
+h1 span { 
+  color: #999; 
+}
+
+div { 
+  margin-bottom: 35px; 
+}
+
+#mapCanvas {
+  height: 400px;
+  background: #F7F7F7;
+  text-align:center;
+  line-height: 400px;
+}
