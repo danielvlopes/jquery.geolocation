@@ -28,7 +28,8 @@
     <script type="text/javascript" charset="utf-8">
     
     $(document).ready(function() {
-      $("#mapCanvas").geolocate(["Rua Domiciano Leite Ribeiro, 210, São Paulo, SP, Brasil", "Leonardo da Vinci, 200, SP, São Paulo"]);
+      var firstAddress = $("#addressList li:first a").html();
+      $("#mapCanvas").geolocate(firstAddress);
       $("#addressList li a").click(geolocateAddress);
     });
     
